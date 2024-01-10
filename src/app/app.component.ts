@@ -13,6 +13,11 @@ import { PostComponent } from './post/post.component';
 export class AppComponent {
   name = "jimmy"
   imgURL = "https://picsum.photos/id/407/367/267"
+  images = [
+    "https://picsum.photos/id/607/367/267",
+    "https://picsum.photos/id/700/367/267",
+    "https://picsum.photos/id/507/367/267"
+  ]
   currentDate  = new Date()
   cost = 2000
   temperature = 25.3
@@ -24,6 +29,9 @@ export class AppComponent {
   lodImg(event: string){
     console.log(event)
   }
+
+  blueClass = false
+  fontSize = 20
 
   getName() {
     return this.name;
